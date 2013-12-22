@@ -2,7 +2,10 @@
 #ifndef SIMPLE_SIGNAL_H__
 #define SIMPLE_SIGNAL_H__
 
-#include <unistd.h>
+//#include <unistd.h>
+//Above include removed in Windows version because of
+// error: 'off64_t' does not name a type
+// bug in MinGW: http://sourceforge.net/p/mingw/bugs/2024/
 #include <assert.h>
 #include <stdint.h>
 #include <vector>
